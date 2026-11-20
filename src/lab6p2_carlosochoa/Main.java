@@ -30,7 +30,6 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpMain = new javax.swing.JPanel();
         jpCrearClub = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -38,6 +37,10 @@ public class Main extends javax.swing.JFrame {
         txtNombreCiudad = new javax.swing.JTextField();
         btnCrearClub = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jpMain = new javax.swing.JPanel();
+        lblMain = new javax.swing.JLabel();
+        btnVolver = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jpMenu = new javax.swing.JPanel();
         lblMenu = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -45,16 +48,9 @@ public class Main extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        lblMain = new javax.swing.JLabel();
-        btnVolver = new javax.swing.JButton();
-        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jpMain.setBackground(new java.awt.Color(153, 204, 255));
-        jpMain.setPreferredSize(new java.awt.Dimension(400, 500));
-        jpMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpCrearClub.setBackground(new java.awt.Color(0, 102, 255));
         jpCrearClub.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -87,6 +83,26 @@ public class Main extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab6p2_carlosochoa/maratgon699.png"))); // NOI18N
         jpCrearClub.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 62, -1, -1));
+
+        getContentPane().add(jpCrearClub, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 26, -1, -1));
+
+        jpMain.setBackground(new java.awt.Color(153, 204, 255));
+        jpMain.setPreferredSize(new java.awt.Dimension(400, 500));
+        jpMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblMain.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblMain.setForeground(new java.awt.Color(0, 0, 0));
+        lblMain.setText("Crea tu club para empezar");
+        jpMain.add(lblMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 471, -1, -1));
+
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+        jpMain.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(996, 469, -1, -1));
+
+        btnSalir.setBackground(new java.awt.Color(255, 51, 51));
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalir.setText("Salir");
+        jpMain.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1078, 469, -1, -1));
 
         jpMenu.setBackground(new java.awt.Color(51, 102, 255));
 
@@ -152,23 +168,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(63, Short.MAX_VALUE))
         );
 
-        jpCrearClub.add(jpMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jpMain.add(jpCrearClub, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 26, -1, -1));
-
-        lblMain.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblMain.setForeground(new java.awt.Color(0, 0, 0));
-        lblMain.setText("Crea tu club para empezar");
-        jpMain.add(lblMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 471, -1, -1));
-
-        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
-        btnVolver.setText("Volver");
-        jpMain.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(996, 469, -1, -1));
-
-        btnSalir.setBackground(new java.awt.Color(255, 51, 51));
-        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
-        btnSalir.setText("Salir");
-        jpMain.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1078, 469, -1, -1));
+        jpMain.add(jpMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
         getContentPane().add(jpMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, -1));
 
@@ -182,10 +182,11 @@ public class Main extends javax.swing.JFrame {
         String ciudadClub = txtNombreCiudad.getText();
 
         jpCrearClub.setVisible(false);
+        jpMenu.setVisible(true);
 
         lblMain.setText("Club creado. Registre al entrenador");
         
-        jpMenu.setVisible(true);
+        
         
         lblMenu.setText(nombreClub + " " + ciudadClub);
 
