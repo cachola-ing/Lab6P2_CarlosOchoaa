@@ -11,31 +11,31 @@ import java.util.ArrayList;
  * @author Carlos Antonio
  */
 public class Club {
-    private String nombre;
-    private String ciudad;
+    private String nombreClub;
+    private String ciudadClub;
     private Entrenador entrenador;
     private ArrayList<Persona> plantel = new ArrayList<>();
 
     public Club(String nombre, String ciudad, Entrenador entrenador) {
-        this.nombre = nombre;
-        this.ciudad = ciudad;
+        this.nombreClub = nombre;
+        this.ciudadClub = ciudad;
         this.entrenador = entrenador;
     }
 
     public String getNombre() {
-        return nombre;
+        return nombreClub;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombreClub = nombre;
     }
 
     public String getCiudad() {
-        return ciudad;
+        return ciudadClub;
     }
 
     public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+        this.ciudadClub = ciudad;
     }
 
     public Entrenador getEntrenador() {

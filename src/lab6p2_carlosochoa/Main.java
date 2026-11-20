@@ -63,6 +63,11 @@ public class Main extends javax.swing.JFrame {
         btnCrearClub.setBackground(new java.awt.Color(153, 204, 255));
         btnCrearClub.setForeground(new java.awt.Color(255, 255, 255));
         btnCrearClub.setText("Crear Club");
+        btnCrearClub.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCrearClubMouseClicked(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab6p2_carlosochoa/maratgon699.png"))); // NOI18N
 
@@ -158,6 +163,20 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCrearClubMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearClubMouseClicked
+        // TODO add your handling code here:
+        
+        String nombreClub = txtNombreClub.getText();
+        String ciudadClub = txtNombreCiudad.getText();
+        
+        jpCrearClub.setVisible(false);
+        
+        lblMain.setText("Club creado. Registre al entrenador");
+        
+        
+        
+    }//GEN-LAST:event_btnCrearClubMouseClicked
 
     /**
      * @param args the command line arguments
