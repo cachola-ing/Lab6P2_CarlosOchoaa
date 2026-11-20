@@ -84,4 +84,21 @@ public class Club {
         
     }
     
+    public void mejorPagado(){
+        
+    }
+    public void jugadoresSuspendidos(){
+        
+    }
+    public void promedioEdad(){
+        
+    }
+    public void jugadoresPos(){
+        
+    }
+    public void resumen(){
+        
+    }
+    
+    
 }

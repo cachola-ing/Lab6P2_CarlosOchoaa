@@ -28,8 +28,133 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jpMain = new javax.swing.JPanel();
+        jpCrearClub = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtNombreClub = new javax.swing.JTextField();
+        txtNombreCiudad = new javax.swing.JTextField();
+        btnCrearClub = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        lblMain = new javax.swing.JLabel();
+        btnVolver = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jpMain.setBackground(new java.awt.Color(153, 204, 255));
+        jpMain.setPreferredSize(new java.awt.Dimension(400, 500));
+
+        jpCrearClub.setBackground(new java.awt.Color(0, 102, 255));
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Nombre del Club");
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Ciudad");
+
+        txtNombreClub.setBackground(new java.awt.Color(153, 204, 255));
+        txtNombreClub.setForeground(new java.awt.Color(255, 255, 255));
+
+        txtNombreCiudad.setBackground(new java.awt.Color(153, 204, 255));
+        txtNombreCiudad.setForeground(new java.awt.Color(255, 255, 255));
+
+        btnCrearClub.setBackground(new java.awt.Color(153, 204, 255));
+        btnCrearClub.setForeground(new java.awt.Color(255, 255, 255));
+        btnCrearClub.setText("Crear Club");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab6p2_carlosochoa/maratgon699.png"))); // NOI18N
+
+        javax.swing.GroupLayout jpCrearClubLayout = new javax.swing.GroupLayout(jpCrearClub);
+        jpCrearClub.setLayout(jpCrearClubLayout);
+        jpCrearClubLayout.setHorizontalGroup(
+            jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpCrearClubLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpCrearClubLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addGap(96, 96, 96))
+                    .addGroup(jpCrearClubLayout.createSequentialGroup()
+                        .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jpCrearClubLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(btnCrearClub))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpCrearClubLayout.createSequentialGroup()
+                                .addComponent(txtNombreClub, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(76, 76, 76))))
+            .addGroup(jpCrearClubLayout.createSequentialGroup()
+                .addGap(292, 292, 292)
+                .addComponent(jLabel4)
+                .addGap(0, 325, Short.MAX_VALUE))
+        );
+        jpCrearClubLayout.setVerticalGroup(
+            jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpCrearClubLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel4)
+                .addGap(58, 58, 58)
+                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
+                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombreClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(btnCrearClub)
+                .addGap(23, 23, 23))
+        );
+
+        lblMain.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblMain.setForeground(new java.awt.Color(0, 0, 0));
+        lblMain.setText("Crea tu club para empezar");
+
+        btnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        btnVolver.setText("Volver");
+
+        btnSalir.setBackground(new java.awt.Color(255, 51, 51));
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalir.setText("Salir");
+
+        javax.swing.GroupLayout jpMainLayout = new javax.swing.GroupLayout(jpMain);
+        jpMain.setLayout(jpMainLayout);
+        jpMainLayout.setHorizontalGroup(
+            jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMainLayout.createSequentialGroup()
+                .addGap(203, 203, 203)
+                .addComponent(jpCrearClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(220, Short.MAX_VALUE))
+            .addGroup(jpMainLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(lblMain)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnVolver)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSalir)
+                .addGap(36, 36, 36))
+        );
+        jpMainLayout.setVerticalGroup(
+            jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMainLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnVolver)
+                        .addComponent(btnSalir))
+                    .addGroup(jpMainLayout.createSequentialGroup()
+                        .addComponent(jpCrearClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblMain)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jpMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -60,5 +185,16 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCrearClub;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnVolver;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jpCrearClub;
+    private javax.swing.JPanel jpMain;
+    private javax.swing.JLabel lblMain;
+    private javax.swing.JTextField txtNombreCiudad;
+    private javax.swing.JTextField txtNombreClub;
     // End of variables declaration//GEN-END:variables
 }
