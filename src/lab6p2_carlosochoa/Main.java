@@ -4,6 +4,8 @@
  */
 package lab6p2_carlosochoa;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Carlos Antonio
@@ -48,6 +50,17 @@ public class Main extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jpNewEntrenador = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -97,11 +110,21 @@ public class Main extends javax.swing.JFrame {
 
         btnVolver.setForeground(new java.awt.Color(255, 255, 255));
         btnVolver.setText("Volver");
+        btnVolver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVolverMouseClicked(evt);
+            }
+        });
         jpMain.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(996, 469, -1, -1));
 
         btnSalir.setBackground(new java.awt.Color(255, 51, 51));
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
         btnSalir.setText("Salir");
+        btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSalirMouseClicked(evt);
+            }
+        });
         jpMain.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1078, 469, -1, -1));
 
         jpMenu.setBackground(new java.awt.Color(51, 102, 255));
@@ -170,6 +193,102 @@ public class Main extends javax.swing.JFrame {
 
         jpMain.add(jpMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
 
+        jpNewEntrenador.setBackground(new java.awt.Color(0, 102, 255));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("lblNombre");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Edad");
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Salario");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Experiencia");
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Formacion");
+
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField1.setText("jTextField1");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setText("jTextField2");
+
+        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField3.setText("jTextField3");
+
+        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField4.setText("jTextField4");
+
+        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setText("jTextField5");
+
+        javax.swing.GroupLayout jpNewEntrenadorLayout = new javax.swing.GroupLayout(jpNewEntrenador);
+        jpNewEntrenador.setLayout(jpNewEntrenadorLayout);
+        jpNewEntrenadorLayout.setHorizontalGroup(
+            jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpNewEntrenadorLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
+                .addGap(26, 26, 26)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                    .addComponent(jTextField2)
+                    .addComponent(jTextField3))
+                .addGap(116, 116, 116)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8))
+                .addGap(18, 18, 18)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                    .addComponent(jTextField5))
+                .addContainerGap(176, Short.MAX_VALUE))
+        );
+        jpNewEntrenadorLayout.setVerticalGroup(
+            jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpNewEntrenadorLayout.createSequentialGroup()
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpNewEntrenadorLayout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jpNewEntrenadorLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(37, 37, 37)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel8)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addGroup(jpNewEntrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(214, Short.MAX_VALUE))
+        );
+
+        jpMain.add(jpNewEntrenador, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 790, 450));
+
         getContentPane().add(jpMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, -1));
 
         pack();
@@ -192,6 +311,23 @@ public class Main extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_btnCrearClubMouseClicked
+
+    private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Saliendo...");
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirMouseClicked
+
+    private void btnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVolverMouseClicked
+        // TODO add your handling code here:
+        
+        jpMenu.setVisible(true);
+        jpCrearClub.setVisible(false);
+    }//GEN-LAST:event_btnVolverMouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -229,10 +365,21 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JPanel jpCrearClub;
     private javax.swing.JPanel jpMain;
     private javax.swing.JPanel jpMenu;
+    private javax.swing.JPanel jpNewEntrenador;
     private javax.swing.JLabel lblMain;
     private javax.swing.JLabel lblMenu;
     private javax.swing.JTextField txtNombreCiudad;
