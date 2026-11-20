@@ -11,6 +11,7 @@ package lab6p2_carlosochoa;
 public class Portero extends Jugador{
     private int atajadas;
     private int golesRecibidos;
+    
 
     public Portero(int atajadas, int golesRecibidos, int dorsal, String posicion, int goles, int asistencias, int tAmarilla, int tRoja, boolean suspendido, String nombre, int edad, double salarioBase) {
         super(dorsal, posicion, goles, asistencias, tAmarilla, tRoja, suspendido, nombre, edad, salarioBase);
@@ -41,6 +42,20 @@ public class Portero extends Jugador{
     public void recibirGol(){
         
     }
+    public void efectividad(){
+        
+    }
+    
+    
+    public void calcularSalario(){
+        
+    }
+    
+    public void mostrarFicha(){
+        
+    }
+    
+    
     
     
 }
