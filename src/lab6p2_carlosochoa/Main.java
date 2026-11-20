@@ -9,7 +9,7 @@ package lab6p2_carlosochoa;
  * @author Carlos Antonio
  */
 public class Main extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Main.class.getName());
 
     /**
@@ -17,6 +17,8 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+        jpCrearClub.setVisible(true);
+        jpMenu.setVisible(false);
     }
 
     /**
@@ -36,6 +38,13 @@ public class Main extends javax.swing.JFrame {
         txtNombreCiudad = new javax.swing.JTextField();
         btnCrearClub = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jpMenu = new javax.swing.JPanel();
+        lblMenu = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         lblMain = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
@@ -45,20 +54,26 @@ public class Main extends javax.swing.JFrame {
 
         jpMain.setBackground(new java.awt.Color(153, 204, 255));
         jpMain.setPreferredSize(new java.awt.Dimension(400, 500));
+        jpMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpCrearClub.setBackground(new java.awt.Color(0, 102, 255));
+        jpCrearClub.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre del Club");
+        jpCrearClub.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 270, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Ciudad");
+        jpCrearClub.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 270, -1, -1));
 
         txtNombreClub.setBackground(new java.awt.Color(153, 204, 255));
         txtNombreClub.setForeground(new java.awt.Color(255, 255, 255));
+        jpCrearClub.add(txtNombreClub, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 304, 75, -1));
 
         txtNombreCiudad.setBackground(new java.awt.Color(153, 204, 255));
         txtNombreCiudad.setForeground(new java.awt.Color(255, 255, 255));
+        jpCrearClub.add(txtNombreCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 304, 75, -1));
 
         btnCrearClub.setBackground(new java.awt.Color(153, 204, 255));
         btnCrearClub.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,96 +83,92 @@ public class Main extends javax.swing.JFrame {
                 btnCrearClubMouseClicked(evt);
             }
         });
+        jpCrearClub.add(btnCrearClub, new org.netbeans.lib.awtextra.AbsoluteConstraints(602, 389, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab6p2_carlosochoa/maratgon699.png"))); // NOI18N
+        jpCrearClub.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 62, -1, -1));
 
-        javax.swing.GroupLayout jpCrearClubLayout = new javax.swing.GroupLayout(jpCrearClub);
-        jpCrearClub.setLayout(jpCrearClubLayout);
-        jpCrearClubLayout.setHorizontalGroup(
-            jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpCrearClubLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpCrearClubLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(96, 96, 96))
-                    .addGroup(jpCrearClubLayout.createSequentialGroup()
-                        .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jpCrearClubLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(btnCrearClub))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpCrearClubLayout.createSequentialGroup()
-                                .addComponent(txtNombreClub, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(76, 76, 76))))
-            .addGroup(jpCrearClubLayout.createSequentialGroup()
-                .addGap(292, 292, 292)
-                .addComponent(jLabel4)
-                .addGap(0, 325, Short.MAX_VALUE))
+        jpMenu.setBackground(new java.awt.Color(51, 102, 255));
+
+        lblMenu.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblMenu.setForeground(new java.awt.Color(255, 255, 255));
+        lblMenu.setText("jLabel3");
+
+        jButton1.setBackground(new java.awt.Color(153, 204, 255));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("New Entrenador");
+
+        jButton2.setBackground(new java.awt.Color(153, 204, 255));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("New Portero");
+
+        jButton3.setBackground(new java.awt.Color(153, 204, 255));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("New Jugador");
+
+        jButton4.setBackground(new java.awt.Color(153, 204, 255));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Estadisticas");
+
+        jButton5.setBackground(new java.awt.Color(153, 204, 255));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Ver Plantel");
+
+        javax.swing.GroupLayout jpMenuLayout = new javax.swing.GroupLayout(jpMenu);
+        jpMenu.setLayout(jpMenuLayout);
+        jpMenuLayout.setHorizontalGroup(
+            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMenuLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(lblMenu)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jpMenuLayout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 245, Short.MAX_VALUE)
+                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(146, 146, 146))
         );
-        jpCrearClubLayout.setVerticalGroup(
-            jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpCrearClubLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(jLabel4)
-                .addGap(58, 58, 58)
-                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(jpCrearClubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNombreClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombreCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(btnCrearClub)
-                .addGap(23, 23, 23))
+        jpMenuLayout.setVerticalGroup(
+            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMenuLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(lblMenu)
+                .addGap(61, 61, 61)
+                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(57, 57, 57)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
+
+        jpCrearClub.add(jpMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jpMain.add(jpCrearClub, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 26, -1, -1));
 
         lblMain.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblMain.setForeground(new java.awt.Color(0, 0, 0));
         lblMain.setText("Crea tu club para empezar");
+        jpMain.add(lblMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 471, -1, -1));
 
         btnVolver.setForeground(new java.awt.Color(255, 255, 255));
         btnVolver.setText("Volver");
+        jpMain.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(996, 469, -1, -1));
 
         btnSalir.setBackground(new java.awt.Color(255, 51, 51));
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
         btnSalir.setText("Salir");
-
-        javax.swing.GroupLayout jpMainLayout = new javax.swing.GroupLayout(jpMain);
-        jpMain.setLayout(jpMainLayout);
-        jpMainLayout.setHorizontalGroup(
-            jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpMainLayout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addComponent(jpCrearClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(220, Short.MAX_VALUE))
-            .addGroup(jpMainLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(lblMain)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnVolver)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSalir)
-                .addGap(36, 36, 36))
-        );
-        jpMainLayout.setVerticalGroup(
-            jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpMainLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jpMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnVolver)
-                        .addComponent(btnSalir))
-                    .addGroup(jpMainLayout.createSequentialGroup()
-                        .addComponent(jpCrearClub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblMain)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jpMain.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1078, 469, -1, -1));
 
         getContentPane().add(jpMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, -1));
 
@@ -166,16 +177,19 @@ public class Main extends javax.swing.JFrame {
 
     private void btnCrearClubMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearClubMouseClicked
         // TODO add your handling code here:
-        
+
         String nombreClub = txtNombreClub.getText();
         String ciudadClub = txtNombreCiudad.getText();
-        
+
         jpCrearClub.setVisible(false);
-        
+
         lblMain.setText("Club creado. Registre al entrenador");
         
+        jpMenu.setVisible(true);
         
-        
+        lblMenu.setText(nombreClub + " " + ciudadClub);
+
+
     }//GEN-LAST:event_btnCrearClubMouseClicked
 
     /**
@@ -207,12 +221,19 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton btnCrearClub;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jpCrearClub;
     private javax.swing.JPanel jpMain;
+    private javax.swing.JPanel jpMenu;
     private javax.swing.JLabel lblMain;
+    private javax.swing.JLabel lblMenu;
     private javax.swing.JTextField txtNombreCiudad;
     private javax.swing.JTextField txtNombreClub;
     // End of variables declaration//GEN-END:variables
